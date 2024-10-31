@@ -1,10 +1,5 @@
 # Baseline Defenses for Adversarial Attacks Against Aligned Language Models
-Official Code for "Baseline Defenses for Adversarial Attacks Against Aligned Language Models"
-
-## Overview
-We evaluate several baseline defense strategies against leading adversarial attacks on LLMs, discussing the various settings in which each is feasible and effective. Particularly, we look at three types of defenses: detection (perplexity based), input preprocessing (paraphrase and retokenization), and adversarial training. The paper can be found [here](https://arxiv.org/abs/2309.00614).
-
-The repository only contains the code for the perplexity filter and paraphrase attack. The retokenization defenses is conducted directly via altering tokenizer via BPE-dropout. For LLaMA model, see the `tokenizer.sp_model.encode(input_text, alpha=bt_alpha, enable_sampling=True)` function, and for other models, BPE-dropout is set by `tokenizer._tokenizer.model.dropout=bt_alpha`, where `bt_alpha` is the dropout rate.
+Reproduce Code for "Baseline Defenses for Adversarial Attacks Against Aligned Language Models"
 
 ## Perplexity Filter
 
@@ -14,5 +9,5 @@ The perplexity filter in the code consists of two filters, a perplexity filter w
 
 The paraphrase defense is rewriting the prompt. For our experiments, we used ChatGPT. Note while this defense is effective it might come at high performance cost.
 
-## Limitations
-As in all research work, we were limited to the settings we explored in the paper. 
+## demo
+Test on Chinese dataset jade-db-v2 easy version and medium version, as well as these prompts with jailbreak attacks including [Cipher](https://github.com/RobustNLP/CipherChat),[DeepInception](https://github.com/tmlr-group/DeepInception),[ReNeLLM](https://github.com/NJUNLP/ReNeLLM),[GCG](https://github.com/llm-attacks/llm-attacks).

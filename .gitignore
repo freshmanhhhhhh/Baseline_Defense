@@ -1,3 +1,5 @@
 models/*
 datasets/*
 datasets_symlink/*
+logs/*
+results/*

@@ -20,4 +20,4 @@ Test on Chinese dataset jade-db-v2 easy version and medium version, as well as t
 
 ## llm as classifier
 
-Applied models: [QWEN2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct), [Llama-Guard3-1B](https://huggingface.co/meta-llama/Llama-Guard-3-1B)
+Applied models: [QWEN2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct), [Llama-Guard3-1B](https://huggingface.co/meta-llama/Llama-Guard-3-1B), [Prompt-Guard3-86M](https://huggingface.co/meta-llama/Prompt-Guard-86M)

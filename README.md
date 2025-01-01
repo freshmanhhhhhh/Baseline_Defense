@@ -3,6 +3,8 @@ Reproduce Code for "Baseline Defenses for Adversarial Attacks Against Aligned La
 
 
 ## Datasets
+Using [jade-db-v2](https://github.com/whitzard-ai/jade-db/tree/main/jade-db-v2.0) as unsafe prompts, and we applied jailbreak attacks to jade-db-v2,  including DeepInception and ReNeLLM. Then we get jailbroken prompts jade-inception and rene_llm.
+Add zhihu+rlhf_zh as normal prompts.
 
 
 ## baseline defenses
@@ -16,7 +18,7 @@ The perplexity filter in the code consists of two filters, a perplexity filter w
 The paraphrase defense is rewriting the prompt. For our experiments, we used ChatGPT. Note while this defense is effective it might come at high performance cost.
 
 ### demo
-Test on Chinese dataset jade-db-v2 easy version and medium version, as well as these prompts with jailbreak attacks including [Cipher](https://github.com/RobustNLP/CipherChat),[DeepInception](https://github.com/tmlr-group/DeepInception),[ReNeLLM](https://github.com/NJUNLP/ReNeLLM),[GCG](https://github.com/llm-attacks/llm-attacks).
+Test on Chinese dataset jade-db-v2 easy version and medium version, as well as these prompts with jailbreak attacks including [DeepInception](https://github.com/tmlr-group/DeepInception),[ReNeLLM](https://github.com/NJUNLP/ReNeLLM),[GCG](https://github.com/llm-attacks/llm-attacks).
 
 ## llm as classifier
 

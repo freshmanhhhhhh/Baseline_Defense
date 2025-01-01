@@ -1,3 +1,4 @@
+# classify prompt using Qwen2.5-Instruct-1.5B
 # nohup python judgebyQwen.py > ./logs/Qwen2.5-1.5B-Instruct/jade_renellm_easy_type_1.log 2>&1 &
 
 import torch

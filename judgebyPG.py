@@ -1,3 +1,4 @@
+# classify prompt using Prompt-Guard-86M
 # nohup python judgebyPG.py --ratio balance --harm_dset jade > ./logs/PromptGuard-86M/combine_jade_benchmark_easy_1k1k.log 2>&1 & 
 
 import torch

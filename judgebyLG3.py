@@ -1,3 +1,4 @@
+# classify prompt using Llama-Guard-3 1B
 # nohup python judgebyLG3.py --ratio balance --harm_dset jade > ./logs/LlamaGuard3-1B/combine_jade_benchmark_easy_1k1k.log 2>&1 & 
 
 import torch
